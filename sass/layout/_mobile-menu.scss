@@ -30,12 +30,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-
     overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
     background-color: var(--primary-background-color);
     transition: opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
 
