@@ -1,0 +1,17 @@
+.logo {
+    font-family: var(--secondary-font-family);
+
+    @include font(700, 26px, 31px);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+
+.logo__dark {
+    color: #000000;
+}
+
+
+.logo__light {
+    color: var(--tertiary-text-color);
+}
