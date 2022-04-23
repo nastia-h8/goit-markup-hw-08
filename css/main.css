@@ -559,7 +559,7 @@ img {
   align-items: center;
 }
 
-.mobile-menu-socials__item::after {
+.mobile-menu-socials__item:not(:last-child)::after {
   content: "";
   width: 20px;
   height: 0px;

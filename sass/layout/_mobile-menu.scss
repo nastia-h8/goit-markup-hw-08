@@ -105,18 +105,15 @@ color: var(--secondary-text-color);
 }
 
 .mobile-menu-socials{
-    display: flex;
-    align-items: center;
-    
-   
-    
+display: flex;
+align-items: center;
 }
 
 .mobile-menu-socials__item {
     display:flex;
     align-items: center;
 
-    &::after {
+    &:not(:last-child)::after {
         content: "";
         width: 20px;
         height: 0px;
