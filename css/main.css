@@ -520,6 +520,10 @@ img {
   color: var(--accent-color);
 }
 
+.mobile-menu-nav__link_active {
+  color: var(--accent-color);
+}
+
 .mobile-menu-contacts {
   margin-bottom: 64px;
 }

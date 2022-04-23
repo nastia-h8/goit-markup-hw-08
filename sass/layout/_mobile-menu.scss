@@ -71,7 +71,12 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+
     }
+}
+
+.mobile-menu-nav__link_active {
+    color: var(--accent-color);
 }
 
 .mobile-menu-contacts{
