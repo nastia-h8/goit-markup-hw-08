@@ -8,6 +8,7 @@
     transition: opacity var(--animation-duration) var(--animation-timing-function),
         visibility var(--animation-duration) var(--animation-timing-function);
     opacity: 1;
+    overflow: auto;
 }
 
 .backdrop {
@@ -19,8 +20,8 @@
 }
 
 .modal {
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 608px;
     text-align: center;
     padding: 40px;
 
@@ -29,6 +30,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 1;
+    overflow: auto;
 
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,7 +38,13 @@
     border-radius: 4px;
     transition: transform var(--animation-duration) var(--animation-timing-function),
         opacity var(--animation-duration) var(--animation-timing-function);
+
+        @media screen and (min-width:1200px){
+            width: 528px;
+            height: 580px;
+    }
 }
+
 
 
 .modal {
@@ -57,9 +65,14 @@
     text-align: center;
     margin-bottom: 12px;
 
-    @include font(700, 20px, 23px);
+    @include font(700, 20px, 30px);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width:1200px){
+        @include font(700, 20px, 23px);
+    }
+
 }
 
 .signup-form__text {
@@ -125,15 +138,26 @@
         }
 }
 
+@media screen and (min-width:1200px) {
+    .signup-form__message::placeholder {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+}
+
 .checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 
-    @include font(400, 14px, 24px);
+    @include font(400, 12px, 14px);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width:1200px) {
+        @include font(400, 14px, 24px);
+    }
 }
 
 .checkbox__link {
@@ -157,5 +181,33 @@
     
     .checkbox__input:focus + & {
         border-color: var(--accent-color);
+    }
+}
+
+.modal-button {
+    padding: 10px 32px;
+}
+
+.modal-button_close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-background-color);
+    cursor: pointer;
+    transition: fill var(--animation-duration) var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
     }
 }

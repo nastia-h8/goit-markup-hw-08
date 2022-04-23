@@ -61,6 +61,8 @@
     margin-left: auto;
 }
 
+
+
 .contact-form__input {
     padding: 16px;
     margin-right: 12px;
@@ -79,4 +81,15 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6)
     }
+}
+
+.submit-button {
+    padding: 10px 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button__icon_left {
+    margin-left: 10px;
 }
