@@ -1,7 +1,11 @@
 .socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.socials__item:not(:last-child){
+    margin-right: 10px;
 }
 
 .socials__link {

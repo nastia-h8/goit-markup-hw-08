@@ -8,7 +8,6 @@
     transition: opacity var(--animation-duration) var(--animation-timing-function),
         visibility var(--animation-duration) var(--animation-timing-function);
     opacity: 1;
-    overflow: auto;
 }
 
 .backdrop {
@@ -20,11 +19,10 @@
 }
 
 .modal {
-    width: 450px;
-    height: 608px;
+    width: 100%;
     text-align: center;
     padding: 40px;
-
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,13 +37,20 @@
     transition: transform var(--animation-duration) var(--animation-timing-function),
         opacity var(--animation-duration) var(--animation-timing-function);
 
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+
         @media screen and (min-width:1200px){
             width: 528px;
-            height: 580px;
     }
 }
 
-
+.signup-form{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .modal {
     .backdrop.is-hidden & {
@@ -146,14 +151,19 @@
 }
 
 .checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: block;
+text-align: center;
     margin-bottom: 30px;
 
     @include font(400, 12px, 14px);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width:480px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     @media screen and (min-width:1200px) {
         @include font(400, 14px, 24px);
