@@ -48,6 +48,9 @@ margin-bottom: 30px;
 }
 
 .work-examples__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
@@ -86,18 +89,8 @@ margin-bottom: 30px;
 }
 
 
-    .work-examples {
-        display: flex;
-        flex-wrap: wrap; 
-    }
-
-    .work-examples__item {
-            overflow: hidden;
-    }
-
     .work-examples__card {
-        display: flex;
-        flex-direction: column;
+        flex-grow: 1;
         padding: 20px 24px;
         border: 1px solid #eeeeee;
     }
@@ -109,10 +102,6 @@ margin-bottom: 30px;
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
-
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     
     .work-examples__description {
