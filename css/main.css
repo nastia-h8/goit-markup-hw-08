@@ -511,6 +511,7 @@ img {
     color: var(--accent-color);
   }
   .contacts__icon {
+    margin-right: 10px;
     fill: currentColor;
   }
 }
@@ -535,9 +536,6 @@ img {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-  .contacts__icon {
-    margin-right: 10px;
   }
 }
 
