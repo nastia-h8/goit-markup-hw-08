@@ -4,9 +4,18 @@
     margin-bottom: 40px;
 }
 
-.filter__item:not(:last-child) {
-    margin-right: 8px;
-    margin-bottom: 16px;
+.filter__item{
+    margin: 8px 4px;
+
+    @media screen and (min-width:768px){
+        margin:0;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .filter__item:not(:last-child) {
+        margin-right:8px;
+    }
 }
 
 .radio-button {
@@ -82,20 +91,28 @@ margin-bottom: 30px;
         flex-wrap: wrap; 
     }
 
+    .work-examples__item {
+            overflow: hidden;
+    }
+
     .work-examples__card {
-        height: 146px;
+        display: flex;
+        flex-direction: column;
         padding: 20px 24px;
         border: 1px solid #eeeeee;
     }
 
     .work-examples__title {
-        display: block;
         margin-bottom: 4px;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: var(--primary-text-color);        
+        color: var(--primary-text-color);
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .work-examples__description {

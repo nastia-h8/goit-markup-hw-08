@@ -12,6 +12,10 @@
 
 .footer-contacts__address{
 margin-bottom: 60px;
+
+    @media screen and (min-width:1200px){
+        margin-bottom: 0;
+    }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -51,6 +55,10 @@ margin-bottom: 60px;
 
 .footer-socials{
     margin-bottom: 60px;
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+        }
 }
 
 .footer-socials__link{
@@ -81,6 +89,10 @@ display: block;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6)
     }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+        }
 }
 
 .submit-button {
