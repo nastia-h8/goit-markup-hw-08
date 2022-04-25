@@ -48,6 +48,9 @@ margin-bottom: 30px;
 }
 
 .work-examples__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
@@ -67,7 +70,7 @@ margin-bottom: 30px;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 78px 24px;
 
     font-size: 18px;
     line-height: 1.56;
@@ -85,19 +88,8 @@ margin-bottom: 30px;
     }
 }
 
-
-    .work-examples {
-        display: flex;
-        flex-wrap: wrap; 
-    }
-
-    .work-examples__item {
-            overflow: hidden;
-    }
-
     .work-examples__card {
-        display: flex;
-        flex-direction: column;
+        flex-grow: 1;
         padding: 20px 24px;
         border: 1px solid #eeeeee;
     }
@@ -109,10 +101,6 @@ margin-bottom: 30px;
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
-
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     
     .work-examples__description {
@@ -127,9 +115,9 @@ margin-bottom: 30px;
 
     // TABLET STARTED 
     @media screen and (min-width:768px){
-    .filter{
-        justify-content: center;
-        margin-bottom: 30px;
+        .filter {
+            justify-content: center;
+            margin-bottom: 30px;
         }
 
         .filter__item:not(:last-child) {
@@ -148,6 +136,10 @@ margin-bottom: 30px;
             margin-top: 30px;
             margin-left: 30px;
         }
+
+        .overlay{
+            padding: 48px 24px;
+        }        
         
     }
 
@@ -170,6 +162,10 @@ margin-bottom: 30px;
 
             .work-examples__card {
                 height: 110px;
+            }
+
+            .overlay {
+                padding: 64px 24px;
             }
     }
 
