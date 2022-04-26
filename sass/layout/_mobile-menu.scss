@@ -12,7 +12,7 @@
         color: var(--accent-color);
     }
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px) {
         display: none;
     }
 }
@@ -29,7 +29,7 @@
 
 .mobile-menu {
     position: absolute;
-    z-index: 9;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100vw;
@@ -47,29 +47,33 @@
         pointer-events: auto;
     }
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px) {
         display: none;
     }
 }
 
 body .mobile-menu.is-open {
-position: fixed;
+    position: fixed;
 }
 
 .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
     position: relative;
-    padding: 48px 40px;  
+    padding: 48px 40px;
 }
 
-.mobile-menu-nav{
-    margin-bottom: 302px;
+.mobile-menu-nav {
+    margin-bottom: auto;
 }
 
-.mobile-menu-nav__item:not(:last-child){
+.mobile-menu-nav__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.mobile-menu-nav__link{
+.mobile-menu-nav__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -88,7 +92,7 @@ position: fixed;
     color: var(--accent-color);
 }
 
-.mobile-menu-contacts{
+.mobile-menu-contacts {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -96,13 +100,13 @@ position: fixed;
 }
 
 
-.mobile-menu-contacts__item:not(:last-child){
+.mobile-menu-contacts__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.mobile-menu-contacts__link{
-font-weight: 500;
-letter-spacing: 0.02em;
+.mobile-menu-contacts__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .mobile-menu-contacts__link--phone {
@@ -117,16 +121,16 @@ letter-spacing: 0.02em;
 }
 
 .mobile-menu-contacts__link--mail {
-font-size: 24px;
-line-height: 1.18;
-color: var(--secondary-text-color);
+    font-size: 24px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
 }
 
 
-.mobile-menu-socials{
-display: flex;
-align-items: center;
-flex-wrap: wrap;
+.mobile-menu-socials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .mobile-menu-socials__item {
@@ -147,12 +151,10 @@ flex-wrap: wrap;
 
 }
 
-.mobile-menu-socials__link{
+.mobile-menu-socials__link {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
-
-

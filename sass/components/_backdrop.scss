@@ -22,7 +22,7 @@
     width: 100%;
     text-align: center;
     padding: 40px;
-    
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,16 +37,16 @@
     transition: transform var(--animation-duration) var(--animation-timing-function),
         opacity var(--animation-duration) var(--animation-timing-function);
 
-        @media screen and (min-width:480px) {
-            width: 450px;
-        }
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
 
-        @media screen and (min-width:1200px){
-            width: 528px;
+    @media screen and (min-width:1200px) {
+        width: 528px;
     }
 }
 
-.signup-form{
+.signup-form {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -74,7 +74,7 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:1200px) {
         @include font(700, 20px, 23px);
     }
 
@@ -102,6 +102,7 @@
     border-radius: 4px;
     color: var(--primary-text-color);
     transition: border-color var(--animation-duration) var(--animation-timing-function);
+
     &:focus {
         border-color: var(--accent-color);
         outline: none;
@@ -114,8 +115,8 @@
     transform: translateY(-50%);
     left: 14px;
     transition: fill var(--animation-duration) var(--animation-timing-function);
-    
-    .signup-form__input:focus + & {
+
+    .signup-form__input:focus+& {
         fill: var(--accent-color);
     }
 }
@@ -131,16 +132,18 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--animation-duration) var(--animation-timing-function);
-        &:focus {
+
+    &:focus {
         border-color: var(--accent-color);
         outline: none;
     }
-        &::placeholder {
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.01em;
-            color: rgba(117, 117, 117, 0.5);
-        }
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -180,14 +183,14 @@
     border: 2px solid #000000;
     border-radius: 3px;
     transition: border-color var(--animation-duration) var(--animation-timing-function),
-    background-color var(--animation-duration) var(--animation-timing-function);
+        background-color var(--animation-duration) var(--animation-timing-function);
 
-    .checkbox__input:checked + & {
+    .checkbox__input:checked+& {
         background-color: var(--accent-color);
         border: 0.2px solid #FFFFFF;
     }
-    
-    .checkbox__input:focus + & {
+
+    .checkbox__input:focus+& {
         border-color: var(--accent-color);
     }
 }

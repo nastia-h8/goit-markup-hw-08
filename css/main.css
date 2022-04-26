@@ -560,7 +560,7 @@ img {
 
 .mobile-menu {
   position: absolute;
-  z-index: 9;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100vw;
@@ -590,12 +590,16 @@ body .mobile-menu.is-open {
 }
 
 .mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: wrap;
   position: relative;
   padding: 48px 40px;
 }
 
 .mobile-menu-nav {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-nav__item:not(:last-child) {
