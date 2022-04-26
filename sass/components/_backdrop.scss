@@ -20,7 +20,6 @@
 
 .modal {
     width: 100%;
-    height: 100%;
     text-align: center;
     padding: 40px;
     
@@ -109,7 +108,7 @@
     }
 }
 
-.signup-icon {
+.signup-form__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -152,8 +151,8 @@
 }
 
 .checkbox {
-display: block;
-text-align: center;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
 
     @include font(400, 12px, 14px);
@@ -161,8 +160,6 @@ text-align: center;
     color: var(--secondary-text-color);
 
     @media screen and (min-width:480px) {
-        display: flex;
-        align-items: center;
         justify-content: center;
     }
 
@@ -195,11 +192,12 @@ text-align: center;
     }
 }
 
+
 .modal-button {
     padding: 10px 32px;
 }
 
-.modal-button_close {
+.modal-button--close {
     position: absolute;
     top: 8px;
     right: 8px;
