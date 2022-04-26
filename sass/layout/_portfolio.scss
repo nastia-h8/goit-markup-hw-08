@@ -149,6 +149,10 @@ margin-bottom: 30px;
     // DESKTOP STARTED 
     
 @media screen and (min-width:1200px){
+    .filter {
+        margin-bottom: 50px;
+    }
+
     .work-examples {
         display: flex;
         flex-wrap: wrap;
