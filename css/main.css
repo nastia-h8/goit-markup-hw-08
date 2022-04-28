@@ -1002,31 +1002,32 @@ body .mobile-menu.is-open {
   fill: currentColor;
 }
 
-.filter__wrapper {
+.filter {
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .filter__wrapper {
+  .filter {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .filter__wrapper {
+  .filter {
     margin-bottom: 50px;
   }
 }
 
-.filter {
+.filter__list {
   display: flex;
   flex-wrap: wrap;
   margin: -8px -4px;
 }
 
 @media screen and (min-width: 768px) {
-  .filter {
+  .filter__list {
     margin: 0;
+    justify-content: center;
   }
 }
 
@@ -1145,13 +1146,6 @@ body .mobile-menu.is-open {
 }
 
 @media screen and (min-width: 768px) {
-  .filter {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .filter__item:not(:last-child) {
-    margin-bottom: 0;
-  }
   .work-examples {
     display: flex;
     flex-wrap: wrap;
@@ -1166,9 +1160,6 @@ body .mobile-menu.is-open {
 }
 
 @media screen and (min-width: 1200px) {
-  .filter {
-    margin-bottom: 50px;
-  }
   .work-examples {
     display: flex;
     flex-wrap: wrap;
