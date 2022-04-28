@@ -17,6 +17,7 @@ padding-bottom: 60px;
 
     @media screen and (min-width:1200px){
         margin-bottom: 50px;
+        @include font(700, 36px, 42px);
     }
 }
 

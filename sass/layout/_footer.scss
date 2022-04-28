@@ -5,15 +5,24 @@
     text-align: center;
 }
 
+.footer__wrapper--left-side{
+    margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+                margin-bottom: 0;
+            }
+}
+
 .footer__logo {
     display: block;
     margin-bottom: 20px;
 }
 
-.footer-contacts__address{
+
+.footer-contacts{
 margin-bottom: 60px;
 
-    @media screen and (min-width:1200px){
+@media screen and (min-width:768px) {
         margin-bottom: 0;
     }
 }
@@ -53,13 +62,6 @@ margin-bottom: 60px;
     color: var(--tertiary-text-color);
 }
 
-.footer-socials{
-    margin-bottom: 60px;
-
-    @media screen and (min-width:1200px) {
-        margin-bottom: 0;
-    }
-}
 
 .footer-socials__link{
     fill: var(--primary-background-color);

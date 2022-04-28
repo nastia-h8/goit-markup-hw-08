@@ -1,7 +1,23 @@
+.filter__wrapper{
+margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+}
+
 .filter {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin: -8px -4px;
+
+    @media screen and (min-width:768px) {
+        margin: 0;
+    }
 }
 
 .filter__item{
@@ -44,7 +60,13 @@
 }
 
 .work-examples__item:not(:last-child){
-margin-bottom: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px){
+        margin-bottom: 0px;
+    }
+
+
 }
 
 .work-examples__link {

@@ -1,4 +1,5 @@
 .backdrop {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,6 +9,7 @@
     transition: opacity var(--animation-duration) var(--animation-timing-function),
         visibility var(--animation-duration) var(--animation-timing-function);
     opacity: 1;
+    overflow-y: scroll;
 }
 
 .backdrop {
@@ -19,14 +21,18 @@
 }
 
 .modal {
-    width: 100%;
+    position: relative;
+    margin: auto;
+    width: calc(100% - 30px);
     text-align: center;
     padding: 40px;
 
+    @media screen and(min-width:768px){
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
+    }
     opacity: 1;
     overflow: auto;
 
